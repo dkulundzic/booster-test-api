@@ -8,6 +8,9 @@ struct FuelPricingController: RouteCollection {
   }
   
   func get(request: Request) throws -> EventLoopFuture<FuelPricing> {
-    FuelPricing.query(on: request.db).first().unwrap(or: Abort(.notFound))
+    FuelPricing
+      .query(on: request.db)
+      .first()
+      .unwrap(or: Abort(.notFound))
   }
 }
