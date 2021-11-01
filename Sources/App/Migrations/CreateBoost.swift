@@ -1,16 +1,10 @@
-//
-//  File.swift
-//  
-//
-//  Created by Domagoj Kulundzic on 01.11.2021..
-//
+
 
 import Foundation
 import FluentKit
 
 struct CreateBoost {
   private enum Fields: String {
-    case id
     case date
     case deliveryWindow
     case paymentMethod
